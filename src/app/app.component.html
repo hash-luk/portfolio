@@ -15,27 +15,27 @@
     <div class="line">
     </div>
     <div class="main">
-        <div id="dev-finance">
+        <div id="dev-finance" (click)='redirectDevFinance()'>
             <div id="text">
-                <h1>DEV.FINANCE$</h1>
+                <span>DEV.FINANCE$</span>
             </div>
             <div class="effect"></div>
             <div class="image dev-finances">
                 <span id="dev-finances-bg"><img src="../assets/banners/dev-finances.png" alt=""></span>
             </div>
         </div>
-        <div id="move-it">
+        <div id="move-it" (click)='redirectMoveIt()'>
             <div id="text">
-                <h1>MOVE.IT</h1>
+                <span>MOVE.IT</span>
             </div>
             <div class="effect"></div>
             <div class="image move-it">
                 <span id="move-it-bg"><img src="../assets/banners/move-it.png" alt=""></span>
             </div>
         </div>
-        <div id="happy">
+        <div id="happy" (click)='redirectHappy()'>
             <div id="text">
-                <h1>HAPPY</h1>
+                <span>HAPPY</span>
             </div>
             <div class="effect"></div>
             <div class="image happy">
@@ -44,10 +44,10 @@
         </div>
     </div>
     <div class="other">
-        <div id="spiderman-home-page">
+        <div id="spiderman-home-page" (click)='redirectSpiderMan()'>
             <img src="../assets/banners/spiderman.png" alt="Spider-Man">
         </div>
-        <div id="pinterest-ui-clone">
+        <div id="pinterest-ui-clone" (click)='redirectPinterestClone()'>
             <img src="../assets/banners/pinterest.png" alt="Pinterest">
         </div>
     </div>
@@ -60,10 +60,6 @@
                 <input type="text" name="name" id="name">
                 <label for="name">Nome*</label>
             </div>
-            <div class="email form-field">
-                <input type="text" name="email" id="email">
-                <label for="email">Email*</label>
-            </div>
             <div class="subject-matter form-field">
                 <input type="text" name="subject-matter" id="subject-matter">
                 <label for="subject-matter">Assunto*</label>
@@ -75,7 +71,6 @@
             <button>Enviar</button>
         </form>
     </div>
-
     <div class="footer">
         <div class="social-media">
             <p>Minhas Redes</p>

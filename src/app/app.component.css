@@ -38,22 +38,53 @@ body {
 }
 
 #content button {
+    position: relative;
     width: 100px;
     height: 30px;
     text-decoration: none;
-    color: #129cff;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     border: none;
     cursor: pointer;
     background-color: transparent;
-    transition: .3s ease-in;
+    transition: all .3s ease-in;
 }
 
-#content button:hover {
-    color: #fff;
-    background-color: #129cff;
-    transform: scale(1.01);
+#content button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .5);
+    transition: all .3s ease;
+}
+
+#content button:hover::before {
+    opacity: 0;
+    transform: scale(.5, .5);
+}
+
+#content button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s ease;
+    border: 1px solid rgba(0, 151, 244, .6);
+    transform: scale(1.2, 1.2);
+}
+
+#content button:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
 }
 
 .apresentation {
@@ -64,7 +95,8 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.5018382352941176) 0%, rgba(0, 0, 0, 0.8827906162464986) 61%, rgba(0, 0, 0, 1) 100%), url('https://source.unsplash.com/random') no-repeat fixed;
+    filter: grayscale(70%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5018382352941176) 0%, rgba(0, 0, 0, 0.8827906162464986) 61%, rgba(0, 0, 0, 1) 100%), url('../assets/banners/bg-start.png') no-repeat fixed;
 }
 
 .apresentation h1 {
@@ -130,13 +162,29 @@ body {
 }
 
 #text {
+    width: 100vw;
+    height: 100px;
     position: absolute;
-    color: black;
+    color: white;
     text-align: center;
-    top: 40%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4rem;
+    top: 25%;
     background: transparent;
     z-index: 2;
     text-shadow: 1px 1px black;
+    transition: all .1s ease-in;
+    /* border: 1px solid red; */
+}
+
+#text:hover {
+    color: #a0cee8;
+    transform: scale(1.1);
+    top: 24%;
+}
+
+.image span {
+    filter: blur(1px) grayscale(60%);
 }
 
 .image {
@@ -145,18 +193,13 @@ body {
     height: 100%;
 }
 
-.image span {
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
-}
-
 .effect {
+    width: 100vw;
+    height: 200px;
     overflow: hidden;
-    filter: blur(1px);
     position: absolute;
     z-index: 1;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.4430147058823529) 0%, rgba(0, 0, 0, 0.2805497198879552) 35%, rgba(5, 5, 5, 1) 100%);
+    background: linear-gradient(86deg, rgba(0, 0, 0, 0.835171568627451) 0%, rgba(0, 0, 0, 0.3925945378151261) 50%, rgba(5, 5, 5, 0.8099614845938375) 100%);
 }
 
 .other {
@@ -167,6 +210,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 50px 0;
 }
 
 #spiderman-home-page {
@@ -174,6 +218,8 @@ body {
     width: 50%;
     height: 100%;
     transform: skew(-10deg) translateX(25px);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 #pinterest-ui-clone {
@@ -181,6 +227,8 @@ body {
     width: 55%;
     height: 100%;
     transform: skew(-10deg) translateX(25px);
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
 #spiderman-home-page img {
@@ -191,6 +239,11 @@ body {
 #pinterest-ui-clone img {
     width: 100%;
     height: 100%;
+}
+
+#pinterest-ui-clone:hover,
+#spiderman-home-page:hover {
+    transform: scale(1.02) skew(-10deg) translateX(25px);
 }
 
 .line {
