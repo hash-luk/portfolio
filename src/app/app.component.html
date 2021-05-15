@@ -15,7 +15,7 @@
     <div class="line">
     </div>
     <div class="main">
-        <div id="dev-finance" (click)='redirectDevFinance()'>
+        <div id="dev-finance" (click)='redirect.redirectDevFinance()'>
             <div id="text">
                 <span>DEV.FINANCE$</span>
             </div>
@@ -24,7 +24,7 @@
                 <span id="dev-finances-bg"><img src="../assets/banners/dev-finances.png" alt=""></span>
             </div>
         </div>
-        <div id="move-it" (click)='redirectMoveIt()'>
+        <div id="move-it" (click)='redirect.redirectMoveIt()'>
             <div id="text">
                 <span>MOVE.IT</span>
             </div>
@@ -33,7 +33,7 @@
                 <span id="move-it-bg"><img src="../assets/banners/move-it.png" alt=""></span>
             </div>
         </div>
-        <div id="happy" (click)='redirectHappy()'>
+        <div id="happy" (click)='redirect.redirectHappy()'>
             <div id="text">
                 <span>HAPPY</span>
             </div>
@@ -44,10 +44,10 @@
         </div>
     </div>
     <div class="other">
-        <div id="spiderman-home-page" (click)='redirectSpiderMan()'>
+        <div id="spiderman-home-page" (click)='redirect.redirectSpiderMan()'>
             <img src="../assets/banners/spiderman.png" alt="Spider-Man">
         </div>
-        <div id="pinterest-ui-clone" (click)='redirectPinterestClone()'>
+        <div id="pinterest-ui-clone" (click)='redirect.redirectPinterestClone()'>
             <img src="../assets/banners/pinterest.png" alt="Pinterest">
         </div>
     </div>
@@ -55,7 +55,7 @@
     </div>
     <div class="contact-form">
         <h1>Fale comigo</h1>
-        <form action="">
+        <form [formGroup]="form" id="form-control" action="">
             <div class="name form-field">
                 <input type="text" name="name" id="name">
                 <label for="name">Nome*</label>
