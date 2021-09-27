@@ -1,27 +1,41 @@
-# Portfolio
+<h1 align="center">
+  <img src="./src/assets/imgs/logo.png">
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
-## Development server
+## Sobre 💻
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p>
+ Este projeto foi criado com o intuito de divulgar meu trabalho ao mesmo tempo que mantenho meu aprendizado, desenvolvido com Angular, é um projeto bem simples de um portfólio pra desenvolvedor, com alguns dos trabalhos que tenho feito!
+</p>
+<br/>
 
-## Code scaffolding
+## Tecnologias 🚀
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Angular
+* Express
+* HTML
+* CSS
+* JavaScript
+* Typescript
 
-## Build
+<br />
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Como Utilizar ⚙
 
-## Running unit tests
+1. No computador,vá a uma pasta que queira deixar o projeto
+2. Abra um terminal de sua preferencia na pasta
+3. Utilize o comando ```git clone https://github.com/hash-luk/portfolio.git ```
+4. Abra o projeto no editor de sua preferência
+5. No terminal utilize o comando ```NG SERVE``` para iniciar um projeto rodando localmente
+6. Por padrão acesse localhost:4200
+7. Pronto, o projeto já esta rodando,só fazer as alterações
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Licença
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE),para saber mais.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
