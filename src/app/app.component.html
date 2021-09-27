@@ -1,8 +1,8 @@
 <div class="bg-all">
     <div class="header">
         <div id="content">
-            <button id="home">INICIO</button>
-            <button id="about">SOBRE</button>
+            <button id="home" routerLink='home' routerLinkActive='selected'>INICIO</button>
+            <button id="about" routerLink='about' routerLinkActive='selected'>SOBRE</button>
             <button id="contact">CONTATO</button>
         </div>
     </div>
@@ -53,32 +53,14 @@
     </div>
     <div class="line">
     </div>
-    <div class="contact-form">
-        <h1>Fale comigo</h1>
-        <form [formGroup]="form" id="form-control" action="">
-            <div class="name form-field">
-                <input type="text" name="name" id="name">
-                <label for="name">Nome*</label>
-            </div>
-            <div class="subject-matter form-field">
-                <input type="text" name="subject-matter" id="subject-matter">
-                <label for="subject-matter">Assunto*</label>
-            </div>
-            <div class="message form-field">
-                <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                <label for="message">Mensagem*</label>
-            </div>
-            <button>Enviar</button>
-        </form>
-    </div>
-    <div class="footer">
-        <div class="social-media">
+    <div class="footer ">
+        <div class="social-media ">
             <p>Minhas Redes</p>
-            <div class="social">
-                <a href="https://github.com/hash-luk"><img src="../assets/icons/github.svg" alt="Github"></a>
-                <a href="https://www.linkedin.com/in/lucas-patrick-p"><img src="../assets/icons/linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://stackoverflow.com/users/15900848/lucas-patrick"><img src="../assets/icons/stackoverflow.svg" alt="StackOverFlow"></a>
-                <a href="https://instagram.com/lucasz_slw"><img src="../assets/icons/instagram.svg" alt="Instagram"></a>
+            <div class="social ">
+                <a href="https://github.com/hash-luk "><img src="../assets/icons/github.svg " alt="Github "></a>
+                <a href="https://www.linkedin.com/in/lucas-patrick-p "><img src="../assets/icons/linkedin.svg " alt="LinkedIn "></a>
+                <a href="https://stackoverflow.com/users/15900848/lucas-patrick "><img src="../assets/icons/stackoverflow.svg " alt="StackOverFlow "></a>
+                <a href="https://instagram.com/lucasz_slw "><img src="../assets/icons/instagram.svg " alt="Instagram "></a>
             </div>
         </div>
         <p>Developed with ❤ by Lucas</p>
